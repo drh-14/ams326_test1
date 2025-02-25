@@ -28,7 +28,7 @@ class Q1:
         self.f = lambda x: sum(self.coefficients[i] * np.pow(x,i) for i in range(len(self.coefficients)))
         self.derivative = lambda x: sum(i * self.coefficients[i] * np.pow(x,i - 1) for i in range(1,len(self.coefficients)))
         tol = 0.5 * (10 ** -4)
-        x = 0
+        x = 20
         while(abs(self.f(x)) >= tol):
             x -= (self.f(x) / self.derivative(x))
         return f'Month:{int(x) // 31}, Day:{int(x) % 31}'
