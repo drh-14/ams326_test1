@@ -1,0 +1,1 @@
+Note: Part 2 and Part 3 will not run until you close the Matplotlib plotting window.
